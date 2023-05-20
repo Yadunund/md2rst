@@ -22,8 +22,6 @@ jobs:
       run: cargo test --verbose
     - name: rustfmt
       run: |
-        rustup toolchain install nightly
-        rustup default nightly
         rustup component add rustfmt
     - name: style
       run: rustfmt --check src/main.rs
