@@ -1,0 +1,75 @@
+{
+  children: [
+    Heading {
+      children: [
+        Text {
+          value: "Changelog for dummy_package",
+          position: Some(1:4-1:31 (3-30))
+        }
+      ],
+      position: Some(1:1-1:31 (0-30)),
+      depth: 2
+    },
+    Heading {
+      children: [
+        Text {
+          value: "0.0.1 (2023-05-20)",
+          position: Some(3:1-3:19 (32-50))
+        }
+      ],
+      position: Some(3:1-4:19 (32-69)),
+      depth: 2
+    },
+    List {
+      children: [
+        ListItem {
+          children: [
+            Paragraph {
+              children: [
+                Text {
+                  value: "dummy changes: ",
+                  position: Some(5:3-5:18 (72-87))
+                },
+                Link {
+                  children: [
+                    Text {
+                      value: "#1",
+                      position: Some(5:19-5:21 (88-90))
+                    }
+                  ],
+                  position: Some(5:18-5:58 (87-127)),
+                  url: "https://github.com/yadunund/md2rst",
+                  title: None
+                }
+              ],
+              position: Some(5:3-5:58 (72-127))
+            }
+          ],
+          position: Some(5:1-5:58 (70-127)),
+          spread: false,
+          checked: None
+        },
+        ListItem {
+          children: [
+            Paragraph {
+              children: [
+                Text {
+                  value: "Contributors: Yadunund",
+                  position: Some(6:3-6:25 (130-152))
+                }
+              ],
+              position: Some(6:3-6:25 (130-152))
+            }
+          ],
+          position: Some(6:1-6:25 (128-152)),
+          spread: false,
+          checked: None
+        }
+      ],
+      position: Some(5:1-6:25 (70-152)),
+      ordered: false,
+      start: None, spread: false
+    }
+  ],
+  position: Some(1:1-7:1 (0-153))
+}
