@@ -1,12 +1,14 @@
 use std::env;
 use std::error::Error;
-use std::path::Path;
 use std::fs;
+use std::path::Path;
 
 fn help() {
-    println!("usage:
+    println!(
+        "usage:
 md2rst <PATH_TO_CHANGELOG.md>
-    Convert the CHANGELOG.md into a CHANGELOG.rst");
+    Convert the CHANGELOG.md into a CHANGELOG.rst"
+    );
 }
 
 fn main() {
@@ -30,7 +32,7 @@ fn main() {
                         Err(_e) => {
                             println!("Unable to read file as string.");
                             return;
-                        },
+                        }
                     };
                     println!("Successfully read file into string: {}", file_as_string);
                 }
